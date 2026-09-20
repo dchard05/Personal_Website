@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DanielChardCodes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="This is a personal website for showing all software projects im currently working on, future plans and my portfolio">
+
+  <meta property="og:title" content="Daniel Chard's personal website">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="./icon.png">
+  <meta property="og:image:alt" content="./icon.svg">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+  <script src="./js/app.js" defer></script>
+</head>
+
+<body>
+  <!-- The Tab Navigation Bar -->
+  <nav class="top-nav-bar">
+    <div class="nav-tabs">
+      <!-- We change these to buttons so they don't force page reloads, using 'onclick' to trigger the swap -->
+      <button class="tab-item active" data-target="home-content">Home</button>
+      <button class="tab-item" data-target="portfolio-content">Portfolio</button>
+      <button class="tab-item" data-target="settings-content">Settings</button>
+    </div>
+  </nav>
+  <!-- The Tab Content Panels -->
+  <div id="home-content" class="tab-panel active-panel">
+    <h1> This website is a work in progress </h1>
+    <h1>Home Section</h1>
+    <h3>Description</h3>
+    <p>This is a personal website for showing all software projects I'm currently working on,
+      future plans and my portfolio. I will try and keep this up to date as possible, however everyone gets busy
+      sometimes.<span id='see-more-description-panel' class="see-more-panel"> This website will be as professional as possible, while experimenting with as many features as I can add some
+    may not fully benefit the site to make this a project I can learn from.</span>
+    </p>
+    <button class="see-more" data-target="see-more-description">--- click to see more ---</button>
+    <h3>Who Am I? </h3>
+    <p> My name is Daniel Chard, I am currently in my third Year at Newcastle University studying computer science.
+      I have a strong interest in coding and enjoy facing challenging problems which sometimes have me stumped.
+    I am dedicated to always learning new things whether it be a new package or language I enjoy getting better as I go.
+    The Gym is one of my favorite places to go when I've had a long day of coding or learning. Most importantly I'm
+      excited to hone my skills and have a great career in the computer science and technology sector.</p>
+  </div>
+  <div id="portfolio-content" class="tab-panel">
+    <h1>Portfolio</h1>
+    <h3>University Coursework Projects:</h3>
+    <ul id='university-project-list' class="project-lists"><li>Secured a vulnerable Flask application against OWASP and CWE threats;</li>
+      <li>Created a local server client communication using the stop and wait protocol in Java;</li>
+      <li>Completed a job scheduling program passing all premade tests in C.</li>
+      <li>Developed a Java application for organising meal plans in a team using GitHub.</li>
+      <li>Used MySQL to create a relational database.</li>
+      <li>Implemented a simple room booking system in python.</ul>
+    <h3> Personal Projects: </h3>
+    <ol id='personal-project-list' class="project-lists"> <li><u>Synesthesia</u>
+      <p>duo project for matching sounds to images using the Google Gemini API.</p>
+    </li>
+       </ol>
+  </div>
+  <div id="settings-content" class="tab-panel">
+    <h1>Settings</h1>
+    <button id = "dark-mode" class="settings-button">darkmode/lightmode</button>
+
+  </div>
+
+</body>
+
+</html>

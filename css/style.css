@@ -1,0 +1,368 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+
+}
+
+/* back ground and text colours*/
+/* Default light mode background */
+body {
+  margin: 0;
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Switches to dark background if the user's device is set to dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    margin: 0;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #202124;
+    color: #e8eaed;
+  }
+}
+
+
+/* Main Navigation Container */
+.top-nav-bar {
+  position: fixed;   /* Keeps the bar locked at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;      /* Standard compact top bar height */
+  background-color: #202124;
+  border-bottom: 1px solid #3c4043;
+  z-index: 1000;      /* Ensures it stays above page content */
+}
+
+/* Flexbox Layout for Tabs */
+.nav-tabs {
+  display: flex;
+  max-width: 1200px; /* Aligns with your central page layout */
+  height: 100%;
+  margin: 0;
+  padding: 0 16px;
+}
+
+/* Individual Tab Items */
+.tab-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  color: #3d4042;    /* Muted text for inactive tabs */
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+/* Hover State */
+.tab-item:hover {
+  color: #3d4042e6;
+}
+
+/* Active State with Bottom Accent Line */
+.tab-item.active {
+  color: #8ab4f8;    /* Google Dark Blue accent text */
+}
+
+.tab-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 20px;        /* Matches padding to span exactly under text */
+  right: 20px;
+  height: 3px;       /* Thickness of the underline */
+  background-color: #8ab4f8;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+/* 1. HIDE ALL PANELS BY DEFAULT */
+.tab-panel {
+  display: none !important; /* Forces the browser to hide them initially */
+  padding: 20px;
+  color: inherit;
+}
+
+/* 2. ONLY SHOW THE ONE RUNNING THE ACTIVE CLASS */
+.tab-panel.active-panel {
+  display: block !important; /* Forces the single active panel to appear */
+}
+
+.see-more-panel {
+  display: none !important; /* Forces the browser to hide them initially */
+  padding: 0;
+  color: inherit;
+}
+
+.see-more-panel.show {
+  margin: 0;
+  display: inline !important; /* Forces the single active panel to appear */
+}
+
+.project-lists {
+  background-color: purple;
+  border-radius: 100px;
+  width: 300px;
+  padding: 50px;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.see-more {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit; /* Keeps your page's standard font style and size */
+  color: grey; /* Keeps your page's standard text color */
+}
