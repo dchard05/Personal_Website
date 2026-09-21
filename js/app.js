@@ -26,6 +26,22 @@ document.querySelector('.see-more').addEventListener('click', function () {
   }
 });
 
+
+const themeToggle = document.querySelector('#theme-checkbox');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+themeToggle.checked = systemPrefersDark
+themeToggle.addEventListener('click', function () {
+  const root = document.documentElement;
+
+  // If system is dark, toggle a 'light-theme' override class
+  if (systemPrefersDark) {
+    root.classList.toggle('light-theme');
+  } else {
+    // If system is light, toggle a 'dark-theme' override class
+    root.classList.toggle('dark-theme');
+  }
+});
+
 function switchTab(event, targetPanelId) {
   console.log("Button clicked! Target panel is:", targetPanelId);
 

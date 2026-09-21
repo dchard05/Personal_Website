@@ -68,7 +68,10 @@
   </div>
   <div id="settings-content" class="tab-panel">
     <h1>Settings</h1>
-    <button id = "dark-mode" class="settings-button">darkmode/lightmode</button>
+    <!-- The hidden checkbox handles the theme state -->
+    <input type="checkbox" id="theme-checkbox" >
+    <!-- The label acts as your actual clickable toggle button -->
+    <label for="theme-checkbox" class="settings-theme"><span class="slider"></span>Dark Mode</label>
 
   </div>
 
